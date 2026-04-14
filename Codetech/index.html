@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Tech - Inovação Digital</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">▲</span>
+                <span class="logo-text">CODE TECH</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#manifesto">MANIFESTO</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#contato" class="btn-contact">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nossa equipe garante autonomia gerando experiências únicas através da inovação</h1>
+            <p>Somos especialistas no que fazemos. Oferecemos inovação digital e automatização completa na jornada do seu produto ou serviço.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollTo('servicos')">Conhecer Serviços</button>
+                <button class="btn btn-secondary" onclick="scrollTo('contato')">Fale Conosco</button>
+            </div>
+        </div>
+          <div class="hero-image">
+    <div class="bola b1"></div>
+    <div class="bola b2"></div>
+    <div class="bola b3"></div>
+</div>
+        </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section id="manifesto" class="manifesto">
+        <h2>Descubra Nossa Agência</h2>
+        <div class="manifesto-grid">
+            <div class="manifesto-card">
+                <div class="card-icon">▲</div>
+                <h3>Nosso Manifesto</h3>
+                <p>Somos uma empresa ativista que busca caminhos para ascender no ramo da tecnologia, criando soluções inovadoras e impactantes.</p>
+            </div>
+            <div class="manifesto-card">
+                <div class="card-icon">▲</div>
+                <h3>Nosso Propósito</h3>
+                <p>Estar atuando em frente às barreiras sociais que a população confronta, abrindo caminhos, visibilidade e oportunidades para ascensão.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <h2>Construímos Soluções com Excelência</h2>
+        <p class="section-subtitle">Você sabe onde quer chegar com seu produto e nós entendemos do assunto para seguir o caminho certo com você!</p>
+        
+        <h3 class="services-title">Nossas Expertises</h3>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h4>Comunicação & Design</h4>
+                <p>Criamos identidades visuais poderosas e estratégias de comunicação que conectam sua marca com o público.</p>
+                <a href="comunicacao-design.html" class="btn btn-service">Ver Serviço</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h4>UX/UI Design</h4>
+                <p>Projetamos interfaces intuitivas e experiências de usuário memoráveis que aumentam engajamento.</p>
+                <a href="uxui-design.html" class="btn btn-service">Ver Serviço</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h4>Desenvolvimento</h4>
+                <p>Desenvolvemos soluções tecnológicas robustas, escaláveis e alinhadas com suas necessidades de negócio.</p>
+                <a href="desenvolvimento.html" class="btn btn-service">Ver Serviço</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <h2>Nosso Processo de Inovação</h2>
+        <p class="section-subtitle">Descubra como desenvolvemos inovação para o seu produto</p>
+        
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h4>Ideia</h4>
+                <p>Entendemos bem o problema e temos ideias de como resolver. A ideia pode ser defendida com uma apresentação: Briefing.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h4>Protótipo</h4>
+                <p>Queremos avaliar a melhor forma de entregar a solução. Exploramos visualmente a ideia apresentada no Briefing.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h4>MVP</h4>
+                <p>Vamos transformar o protótipo escolhido em um produto evolutivo. Uma solução funcional que permite executar o essencial.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h4>Mercado</h4>
+                <p>Um produto maduro, visando ganhar escala. Caso a resposta do mercado não seja esperada, volta-se à ideia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="contact-content">
+            <div class="contact-text">
+                <h2>Explore a Inovação para o Seu Produto Digital</h2>
+                <p>Um novo espaço para seu produto manifestar</p>
+            </div>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Digite seu nome completo" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="WhatsApp" required>
+                <input type="text" placeholder="Empresa" required>
+                <textarea placeholder="Digite sua mensagem aqui..." rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>SERVIÇOS</h4>
+                <ul>
+                    <li><a href="comunicacao-design.html">Comunicação & Design</a></li>
+                    <li><a href="uxui-design.html">UX/UI Design</a></li>
+                    <li><a href="desenvolvimento.html">Desenvolvimento</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>MARCA</h4>
+                <ul>
+                    <li><a href="#manifesto">Manifesto</a></li>
+                    <li><a href="#manifesto">Propósito</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>CONTATO</h4>
+                <p>mycaeleve2106@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mycael-mythel">LinkedIn</a>
+                    <a href="https://www.instagram.com/cael_xw/">Instagram</a>
+                    <a href="https://twitter.com/">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Code Tech. Todos os direitos reservados.</p>
+        </div>
+   
+       
+    </footer>
+
+    <script src="fazer.js"></script>
+</body>
+</html>
