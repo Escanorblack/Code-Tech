@@ -148,3 +148,7 @@ document.head.appendChild(style);
 
 console.log('%c🚀 Tech Agency - Inovação Digital', 'font-size: 20px; color: #FF8C00; font-weight: bold;');
 console.log('%cBem-vindo! Explore nossos serviços e entre em contato conosco.', 'font-size: 14px; color: #B0B0B0;');
+onclick="scrollTo('servicos')"
+onsubmit="handleSubmit(event)"
+function scrollTo() {}
+function handleSubmit() {}
