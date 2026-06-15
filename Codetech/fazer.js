@@ -85,17 +85,27 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
 });
 
 
-// If you want to 5555wadd a mobile menu, uncomment and modify this section
-
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navMenu = document.querySelector('.nav-menu');
 
 if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', function() {
         navMenu.classList.toggle('active');
+        this.classList.toggle('active');
+        const expanded = this.classList.contains('active');
+        this.setAttribute('aria-expanded', expanded);
     });
 }
 
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', function() {
+        navMenu.classList.remove('active');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.classList.remove('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+});
 
 
 document.querySelectorAll('.btn').forEach(button => {
@@ -148,7 +158,3 @@ document.head.appendChild(style);
 
 console.log('%c🚀 Tech Agency - Inovação Digital', 'font-size: 20px; color: #FF8C00; font-weight: bold;');
 console.log('%cBem-vindo! Explore nossos serviços e entre em contato conosco.', 'font-size: 14px; color: #B0B0B0;');
-onclick="scrollTo('servicos')"
-onsubmit="handleSubmit(event)"
-function scrollTo() {}
-function handleSubmit() {}
